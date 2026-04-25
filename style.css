@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #ccc;
+}
+
+/* IMPRESSÂ0 */
+.ficha {
+  width: 794px;
+  height: 1123px;
+  margin: 20px auto;
+  padding: 40px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* LOG0 */
+.logo-box {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+h2 {
+  text-align: center;
+}
+
+.campo {
+  margin-bottom: 10px;
+}
+
+.campo label {
+  font-weight: bold;
+  display: block;
+}
+
+/* CAMP0S */
+input,
+textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+  resize: none;
+  overflow: hidden;
+}
+
+/* AN0TAÇÕES */
+textarea.anotacoes {
+  height: 260px;
+}
+
+/* B0TÕES */
+.botoes {
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  padding: 10px 20px;
+}
+
+/* IMPRESSÃ0 */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  body {
+    background: none;
+  }
+
+  .botoes {
+    display: none;
+  }
+
+  .ficha {
+    margin: 0;
+  }
+}
