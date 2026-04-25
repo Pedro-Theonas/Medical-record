@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha Médica</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ficha" id="ficha">
+
+  <!-- LOGO -->
+  <div class="logo-box" id="logoBox">
+    <span>Logo</span>
+  </div>
+
+  <h2>Ficha Médica</h2>
+
+  <!-- DADOS PESSOAIS -->
+  <h3>Dados Pessoais</h3>
+
+  <div class="campo">
+    <label>Nome</label>
+    <input type="text">
+  </div>
+
+  <div class="campo">
+    <label>Data da Consulta</label>
+    <input type="date">
+  </div>
+
+  <div class="campo">
+    <label>Nome da Mãe</label>
+    <input type="text">
+  </div>
+
+  <div class="campo">
+    <label>Nome do Pai</label>
+    <input type="text">
+  </div>
+
+  <div class="campo">
+    <label>Endereço</label>
+    <input type="text">
+  </div>
+
+  <div class="campo">
+    <label>Telefone</label>
+    <input type="text">
+  </div>
+
+  <div class="campo">
+    <label>Data de Nascimento</label>
+    <input type="date">
+  </div>
+
+  <div class="campo">
+    <label>Idade</label>
+    <input type="text">
+  </div>
+
+  <div class="campo">
+    <label>Profissão</label>
+    <input type="text">
+  </div>
+
+  <div class="campo">
+    <label>Sexo</label>
+    <input type="text">
+  </div>
+
+  <!-- DADOS CLÍNICOS -->
+  <h3>Dados Clínicos</h3>
+
+  <div class="campo">
+    <label>Anotações da Consulta</label>
+    <textarea class="anotacoes" maxlength="900"></textarea>
+  </div>
+
+</div>
+
+<!-- BOTÕES -->
+<div class="botoes">
+  <input type="file" accept="image/*" id="logoInput" hidden>
+  <button id="btnLogo">Escolher Logo</button>
+  <button id="btnPrint">Imprimir</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
